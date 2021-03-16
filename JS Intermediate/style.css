@@ -1,0 +1,17 @@
+button{
+  width: auto;
+  height: 50px;
+  display: block;
+  margin: 10px;
+}
+label{
+  margin: 10px;
+}
+div,p{
+  display: inline-block;
+  vertical-align: top;
+  margin: 5px;
+}
+#print{
+  width: 70%;
+}
