@@ -115,7 +115,7 @@ function fibonacci() {
     document.getElementById("print").innerHTML = ""
   };
   let x = [0, 1];
-  i = 1;
+  let i = 1;
   while(x[i] < 1000000) {
   x[i + 1] = x[i] + x[i -1];
   i++;
