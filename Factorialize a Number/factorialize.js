@@ -1,15 +1,22 @@
 // 1. take and define a number as input to calculate its factorial.
-// 2. define a variable named result and set it to the number.
+// 2. define a variable named result and set it to the one.
+// 3. if the number is greater than one set the number to the result.
 // 3. make a loop and multiply result by the n-1 and continue the loop while n is greater than 1.
 // 4. print the result.
 
 function factorialize() {
   let n = document.getElementById("input-number").value;
-  let result = n;
-  while (n >1) {
-    result *= (n - 1);
-    n--
+  let result = 1 ;
+  if(n > 1){
+    result = n;
+    while (n >1) {
+      result *= (n - 1);
+      n--
+    };
   }
+
+
+  
   document.getElementById("answer").innerHTML = result;
 };
 document.getElementById("factorialize").addEventListener("click", factorialize);
