@@ -1,0 +1,19 @@
+
+button{
+  width: auto;
+  height: 50px;
+  display: block;
+  margin: 10px;
+}
+label{
+  margin: 10px;
+}
+div{
+  display: inline-block;
+  margin: 5% 30%;
+}
+@media only screen and (max-width: 400px) {
+  div {
+    margin: 5% 5%;
+  }
+}
