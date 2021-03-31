@@ -1,18 +1,13 @@
-// 1. define a function to determine if a number is prime?
-// 2. in the function make a for loop to go trough the numbers and see if they can devided to any number?
-// 3. beging the index from 3 and increase them by 2 for decrease the number of looping.
-// 3. if the number is devideable return false and elsereturn true.
-// 4. define another function to sum the prime number.
-// 5. take a number as input and turn type of it to a number.
-// 6. define a variable sum to hold the sum of number and set it to 5 for decrese the number of looping.
-function isPrime(val) {
-  for (let i = 3; i < val; i += 2) {
-    if(val % i === 0) {
-      return false;
-    };
-  }
-  return true;
-}
+// 1. define a variable and put the input number in it.
+// 2. define aan empty array to put the result in it.
+// 3. define a counter index and set it to -1.
+// 4. if the input is empty write a phrase to fill it.
+// 5. write a while loop and continue it untile the number is greater than 1.
+// 6. add 1 to the counter.
+// 7. if the remain of the divition of the number by 3 is 0 then add the number and zero to the array and divide the number by 3.
+// 8. if the remain of the divition of the number by 3 is 1 then add the number and -1 to the array and substract the number by 1 and then divide the number by 3.
+// 9.if the remain of the divition of the number by 3 is 2 then add the number and 1 to the array and add the number by 1 and then divide the number by 3.
+// 10. print the array.
 function game3s() {
   let num = parseInt(document.getElementById("input-number").value);
   let arr = [];
@@ -39,9 +34,8 @@ function game3s() {
 };
 document.getElementById("3s").addEventListener("click", game3s);
 
-// sHoRt AnD sToUt => short and stout => [[short], [and], [stout]]
-// i = 0 => [[Short], [and], [stout]]
-// i = 1 => [[Short], [And], [stout]]
-// i = 2 => [[Short], [And], [Stout]]
-// [[Short], [And], [Stout]] => Short And Stout
+// for example number 30
+// i = 0 => num % 3 = 0 => arr[0] = [30, 0] , num = 10
+// i = 1 => num % 3 = 1 => arr[1] = [10, -1] , num = 10 - 1, num = 3
+// i = 2 => num % 3 = 0 => arr[3] = [3, 0] , num = 1
 //......................................................
